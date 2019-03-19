@@ -139,6 +139,14 @@ p {
   line-height: 1.285;
 }
  
+img {
+ width: 100%;
+}
+ 
+figure {
+ margin: 0;
+}
+ 
 address {
  font-style: normal;
 }
@@ -165,6 +173,14 @@ header {
 
 header .content-wrapper {
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header figure {
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -233,11 +249,16 @@ footer .copyright {
   margin: 20px 0;
 }
 
+
 /* -------------------- Mobile Styles - Homepage -------------------- */
 
 /* Hero Area */
 
 .hero-area {
+  background: url(../img/unplugged-retreat.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -285,6 +306,9 @@ input[type=button] {
 /* Features */
 
 .features {
+  background: url('../img/unplugged-retreat-features.jpg');
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -489,12 +513,12 @@ input[type=button] {
   h2 {
     font-size: 2.25em;
     line-height: 1.333;
-}
+  }
 
-h3 {
-    font-size: 1.5em;
-    line-height: 1.25;
-}
+  h3 {
+      font-size: 1.5em;
+      line-height: 1.25;
+  }
 
   /* Header */
   header {
@@ -571,6 +595,7 @@ h3 {
     width: 90%;
   }
 
+  .reviews article figure,
   .reviews article div {
     width: 49%;
   }
@@ -578,7 +603,7 @@ h3 {
   .reviews h3 {
     width: 75%;
     margin: 0;
-}
+  }
   /* Footer */
   footer .content-wrapper {
     width: 65%;
